@@ -1,26 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Moulpali&display=swap');
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-moulpali);
+  --font-subheading: var(--font-moul);
+  --font-text: var(--font-kantumruypro);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  --color-primary: #ac8246;
+  --color-secondary: #ffbfce;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@utility bg-pink-border-gradient {
+  @apply bg-[linear-gradient(176deg,rgba(255,191,206,1)_0%,rgba(0,0,0,0)_45%,rgba(107,87,94,0)_65%,rgba(255,191,206,1)_100%)]
+}
+
+@utility bg-pink-outter-gradient {
+  @apply bg-[linear-gradient(178deg,rgba(255,191,206,0.6)_0%,rgba(0,0,0,0)_30%,rgba(107,87,94,0)_70%,rgba(255,191,206,0.6)_100%)]
+}
+
+html {
+  scroll-behavior: smooth;
 }
