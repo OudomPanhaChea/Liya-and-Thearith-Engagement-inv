@@ -22,12 +22,12 @@ const GreetingSection = () => {
 
         <div className="flex items-center justify-between">
           <div className="text-start font-subheading space-y-4">
-            <h3>លោក ជា ថុង</h3>
-            <h3>លោកស្រី សុខ លាងគ្រី</h3>
-          </div>
-          <div className="text-end font-subheading space-y-4">
             <h3>លោក ទិត ផាណារ៉ូ</h3>
             <h3>លោកស្រី កែ សុខចិន្តា</h3>
+          </div>
+          <div className="text-end font-subheading space-y-4">
+            <h3>លោក ជា ថុង</h3>
+            <h3>លោកស្រី សុខ លាងគ្រី</h3>
           </div>
         </div>
 
